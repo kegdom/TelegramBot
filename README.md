@@ -3,7 +3,7 @@
 - Klik op de bot en stuur “/start”, de bot start nu en geeft meerdere opties
 - Wij willen een nieuwe bot dus stuur “/newbot”
 - Hij wil nu een naam: geef je bot een naam
-- Nu wilt hij een username (deze moet uniek zijn en eindigen op “bot” dus succes)
+- Nu wilt hij een username (deze moet uniek zijn en eindigen op “bot” dus succes :) )
 - Gefeliciteerd je hebt nu een bot aangemaakt! BotFather geeft nu een API-token terug, bewaar deze goed deze hebben we later nodig.
 
 ## Stap 2: Maak een nieuw project aan (ik gebruik hiervoor Visual Studio Code met PlatformIO)
@@ -24,7 +24,7 @@ https://github.com/witnessmenow/Universal-Arduino-Telegram-Bot.git
 - Open de main.cpp in je project folder
 - Vervang de inhoud die er nu staat met de code die in deze repo staat in de "src" folder genaamd `main.cpp` dit kan je gewoon copieeren en plakken in je eigenproject. (of neem deze repo over)
 
-> Vervang hierin de YOUR_SSID, YOUR_PASSWORD en YOUR_BOT_TOKEN met je eigen wifi inlog gegevens en de API bot token die we eerder hebben gekregen van BotFather.
+> Vervang hierin de `YOUR_WIFI_SSID`, `YOUR_WIFI_PASSWORD` en `YOUR_BOT_TOKEN` met je eigen wifi inlog gegevens en de API bot token die we eerder hebben gekregen van BotFather.
 
 ## Stap 6: Uploaden maar!
 - Build en upload je code naar je esp32 door op de upload knop te drukken in je Visual Studio Code
