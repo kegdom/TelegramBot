@@ -34,3 +34,7 @@
 - Typ `/start` om te beginnen. De bot geeft je nu instructies over wat je kunt doen.
 - Typ `/ledon` om de LED aan te zetten.
 - Typ `/ledoff` om de LED weer uit te zetten.
+
+https://randomnerdtutorials.com/telegram-control-esp32-esp8266-nodemcu-outputs/
+https://core.telegram.org/bots
+https://www.instructables.com/Telegram-Bot-Arduino/
