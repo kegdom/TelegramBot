@@ -11,7 +11,7 @@
 - Selecteer je ESP32 board, in mijn geval esp32dev module
 - Druk op finish om een project aan te maken
 
-##Stap 3: Update je .ini bestand voor de libraries (en je serial monitor speed)
+## Stap 3: Update je .ini bestand voor de libraries (en je serial monitor speed)
 - Voeg hiervoor `monitor_speed = 115200` toe
 - En voeg de lib_deps toe zodat PlatformIO weet welke libraries het nodig heeb voor je project, in dit geval: 
 `
