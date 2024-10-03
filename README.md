@@ -11,7 +11,7 @@
 - Selecteer je ESP32 board, bijvoorbeeld **esp32dev module**.
 - Druk op **Finish** om het project aan te maken.
 
-## Stap 3: Update je `.ini` bestand voor de libraries (en de serial monitor snelheid)
+## Stap 3: Update je `platformio.ini` bestand voor de libraries (en de serial monitor snelheid)
 - Voeg `monitor_speed = 115200` toe om de snelheid van de seriële monitor in te stellen.
 - Voeg de juiste **lib_deps** toe zodat PlatformIO de benodigde libraries installeert. Voor dit project gebruiken we:
     ```ini
@@ -19,15 +19,21 @@
     bblanchon/ArduinoJson@^6.19.4 
     https://github.com/witnessmenow/Universal-Arduino-Telegram-Bot.git
     ```
+   Door dit bestand aan te passen weet PlatformIo precies wat het nodig heeft en installeert het de jusite libraries en andere benodigdheden. Als je      een foute library hebt toegevoegd, dan haal je dit uit je **lib_deps** en dan verwijderd PlatformIO dit ook weer automatisch bij de build.
+  Na deze stap moet je `plaformio.ini` er zo uitzien:
+  <img width="547" alt="Screenshot 2024-10-03 at 11 12 46" src="https://github.com/user-attachments/assets/f361f9a8-54b1-477b-9235-21a4c232220f">
 
+  
 ## Stap 4: De code
-- Open het bestand **main.cpp** in je projectmap.
-- Vervang de huidige inhoud met de code die beschikbaar is in de "src" folder van deze repository, in het bestand genaamd `main.cpp`. Je kunt dit gewoon kopiëren en plakken in je eigen project (of je kunt deze repository overnemen).
+- Open het bestand **main.cpp** in je projectmap. Deze vind je in je `src` folder
+- Vervang de huidige inhoud met de code die beschikbaar is in de `src` folder van deze repository, in het bestand genaamd `main.cpp`. Je kunt dit gewoon kopiëren en plakken in je eigen project (of je kunt deze repository overnemen/clonen).
   
 > Vervang in de code de waarden `YOUR_WIFI_SSID`, `YOUR_WIFI_PASSWORD` en `YOUR_BOT_TOKEN` met je eigen Wi-Fi-inloggegevens en de **API bot token** die je eerder van BotFather hebt gekregen.
 
 ## Stap 5: Uploaden maar!
 - Build en upload je code naar je ESP32 door op de **Upload** knop te drukken in Visual Studio Code.
+- Druk hiervoor eerst op het vinkje om je project te compileren, en daarna op het pijltje om het naar je ESP te sturen (zie de screenshot hieronder). Let erop dat als je serial monitor `connecting....` zegt dan moet je eventjes de **boot** knop van je esp ingedrukt houden zodat je ESP in de juiste boot stand staat om je code te kunenn ontvangen.
+<img width="433" alt="Screenshot 2024-10-03 at 11 10 00" src="https://github.com/user-attachments/assets/65afddb0-e101-4d0e-a809-56a30a5e2bfa">
 
 ## Stap 6: Test de bot
 - Ga naar je Telegram bot via de link die je in het begin van BotFather hebt gekregen.
